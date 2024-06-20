@@ -27,7 +27,7 @@
 							<label>EQUIPO 2</label>
 							<input type="text" x-model="equipo2.nombre" class="form-control" placeholder="Nombre del equipo 2">
 							<input type="number" x-model="equipo2.min" class="form-control" placeholder="Cantidad de goles como mínimo">
-							<input type="numbre" x-model="equipo2.max" class="form-control" placeholder="Cantidad de goles como máximo">
+							<input type="number" x-model="equipo2.max" class="form-control" placeholder="Cantidad de goles como máximo">
 						</div>
 						<div class="mt-3">
 							<button x-show="equipo1.nombre && equipo1.min && equipo1.max && parseInt(equipo1.max)>=parseInt(equipo1.min) && equipo2.nombre && equipo2.min && equipo2.max && parseInt(equipo2.max)>=parseInt(equipo2.min)" class="btn btn-primary" x-on:click="resultado=`${equipo1.nombre} ${getRandomNumMinMax(equipo1.min,equipo1.max)} - ${getRandomNumMinMax(equipo2.min,equipo2.max)} ${equipo2.nombre}`">Predicción</button>
